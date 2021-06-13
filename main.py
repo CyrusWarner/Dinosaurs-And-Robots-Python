@@ -2,6 +2,7 @@ from robot import Robot
 from weapon import Weapon
 from dinosaur import Dinosaur
 from fleet import Fleet
+from herd import Herd
 
 weapon_one = Weapon("sword")
 weapon_two = Weapon("gun")
@@ -20,3 +21,6 @@ dino_one = Dinosaur("T-rex", 10, 100)
 dino_two = Dinosaur("Velociraptor", 8, 75)
 dino_three = Dinosaur("Triceratops", 6, 75)
 dino_four = Dinosaur("Brontosaurus", 3, 50)
+
+# assigning dinos to Herd
+dinos = Herd(dino_one, dino_two, dino_three, dino_four)
