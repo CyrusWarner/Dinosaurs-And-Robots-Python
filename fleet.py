@@ -10,8 +10,6 @@ class Fleet:
         terminator = Robot("Terminator")
         dez = Robot("dez")
         sadie = Robot("Sadie")
-        cyrus = Robot("Cyrus")
         self.fleet_list.append(terminator)
         self.fleet_list.append(dez)
         self.fleet_list.append(sadie)
-        self.fleet_list.append(cyrus)

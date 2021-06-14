@@ -10,8 +10,6 @@ class Herd:
         trex = Dinosaur("T-rex", 10, 100)
         velociraptor = Dinosaur("Velociraptor", 8, 75)
         triceratops = Dinosaur("Triceratops", 6, 75)
-        brontosaurus = Dinosaur("Brontosaurus", 3, 50)
         self.herd_list.append(trex)
         self.herd_list.append(velociraptor)
         self.herd_list.append(triceratops)
-        self.herd_list.append(brontosaurus)
