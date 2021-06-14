@@ -6,9 +6,11 @@ class Fleet:
         self.third_robot = robot_three
         self.second_robot = robot_two
         self.first_robot = robot_one
-        self.fleet_list.append(self.first_robot)
-        self.fleet_list.append(self.second_robot)
-        self.fleet_list.append(self.third_robot)
-        self.fleet_list.append(self.fourth_robot)
         self.fleet_list = []
+        self.create_fleet()
 
+    def create_fleet(self, robot_one, robot_two, robot_three, robot_four):
+        self.fleet_list.append(robot_one)
+        self.fleet_list.append(robot_two)
+        self.fleet_list.append(robot_three)
+        self.fleet_list.append(robot_four)
