@@ -45,3 +45,18 @@ class Battlefield:
                 return self.battle_two()
             elif self.dino_two_turn.health == 0:
                 print(f"{self.dino_two_turn.type} has lost the second battle!\n")
+
+    def battle_three(self):
+        user_input = input("Type in yes to begin the next round for the final battle!\n")
+        if user_input.lower() == "yes":
+            self.robot_three_turn.health -= self.dino_three_turn.attack_power
+            self.dino_three_turn.health -= self.robot_three_turn.weapon.attack_power
+            print(f"{self.dino_three_turn.type} attacked {self.robot_three_turn.name}!")
+            print(f"{self.robot_three_turn.name} is now at {self.robot_three_turn.health} health points!\n\n")
+            print(f"{self.robot_three_turn.name} attacked {self.dino_three_turn.type}!")
+            print(f"{self.dino_three_turn.type} is now at {self.dino_three_turn.health} health points!\n\n")
+            if self.dino_three_turn.health != 0:
+                return self.battle_two()
+            elif self.dino_three_turn.health == 0:
+                print(f"{self.dino_three_turn.type} has lost the second battle!\n")
+
