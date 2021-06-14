@@ -1,4 +1,8 @@
+from herd import Herd
+from fleet import Fleet
+
 
 class Battlefield:
     def __init__(self):
-        pass
+        self.display_welcome = "Welcome to Robots vs Dinosaurs!"
+        self.dino_turn = Fleet.

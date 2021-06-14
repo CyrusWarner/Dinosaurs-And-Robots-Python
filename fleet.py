@@ -1,16 +1,17 @@
+from robot import Robot
 
 
 class Fleet:
-    def __init__(self, robot_one, robot_two, robot_three, robot_four):
-        self.fourth_robot = robot_four
-        self.third_robot = robot_three
-        self.second_robot = robot_two
-        self.first_robot = robot_one
+    def __init__(self):
         self.fleet_list = []
         self.create_fleet()
 
-    def create_fleet(self, robot_one, robot_two, robot_three, robot_four):
-        self.fleet_list.append(robot_one)
-        self.fleet_list.append(robot_two)
-        self.fleet_list.append(robot_three)
-        self.fleet_list.append(robot_four)
+    def create_fleet(self):
+        terminator = Robot("Terminator")
+        dez = Robot("dez")
+        sadie = Robot("Sadie")
+        cyrus = Robot("Cyrus")
+        self.fleet_list.append(terminator)
+        self.fleet_list.append(dez)
+        self.fleet_list.append(sadie)
+        self.fleet_list.append(cyrus)

@@ -1,11 +1,19 @@
+from dinosaur import Dinosaur
+
+
 class Herd:
-    def __init__(self, dino_one, dino_two, dino_three, dino_four):
-        self.first_dino = dino_one
-        self.second_dino = dino_two
-        self.third_dino = dino_three
-        self.fourth_dino = dino_four
+    def __init__(self):
         self.herd_list = []
-        self.herd_list.append(self.first_dino)
-        self.herd_list.append(self.second_dino)
-        self.herd_list.append(self.third_dino)
-        self.herd_list.append(self.fourth_dino)
+        self.create_herd()
+
+    def create_herd(self):
+        trex = Dinosaur("T-rex", 10, 100)
+        velociraptor = Dinosaur("Velociraptor", 8, 75)
+        triceratops = Dinosaur("Triceratops", 6, 75)
+        brontosaurus = Dinosaur("Brontosaurus", 3, 50)
+        self.herd_list.append(trex)
+        self.herd_list.append(velociraptor)
+        self.herd_list.append(triceratops)
+        self.herd_list.append(brontosaurus)
+
+
