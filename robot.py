@@ -7,7 +7,3 @@ class Robot:
         self.power_level = 10
         self.health = 100
         self.weapon = Weapon()
-
-    def attack(self, name):
-        pass
-

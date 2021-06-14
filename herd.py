@@ -15,5 +15,3 @@ class Herd:
         self.herd_list.append(velociraptor)
         self.herd_list.append(triceratops)
         self.herd_list.append(brontosaurus)
-
-
