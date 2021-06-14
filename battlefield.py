@@ -18,7 +18,7 @@ class Battlefield:
         self.battle_one()
 
     def battle_one(self):
-        user_input = input("Type in yes if you would like to begin the battle!\n")
+        user_input = input("Type in yes if you would like to begin the battle!\n\n")
         if user_input.lower() == "yes":
             self.robot_one_turn.health -= self.dino_one_turn.attack_power
             self.dino_one_turn.health -= self.robot_one_turn.weapon.attack_power
@@ -33,7 +33,7 @@ class Battlefield:
                 self.battle_two()
 
     def battle_two(self):
-        user_input = input("Type in yes to begin the next round for the second battle!\n")
+        user_input = input("Type in yes to begin the next round for the second battle!\n\n")
         if user_input.lower() == "yes":
             self.robot_two_turn.health -= self.dino_two_turn.attack_power
             self.dino_two_turn.health -= self.robot_two_turn.weapon.attack_power
@@ -45,9 +45,10 @@ class Battlefield:
                 return self.battle_two()
             elif self.dino_two_turn.health == 0:
                 print(f"{self.dino_two_turn.type} has lost the second battle!\n")
+                self.battle_three()
 
     def battle_three(self):
-        user_input = input("Type in yes to begin the next round for the final battle!\n")
+        user_input = input("Type in yes to begin the next round for the final battle!\n\n")
         if user_input.lower() == "yes":
             self.robot_three_turn.health -= self.dino_three_turn.attack_power
             self.dino_three_turn.health -= self.robot_three_turn.weapon.attack_power
@@ -56,7 +57,14 @@ class Battlefield:
             print(f"{self.robot_three_turn.name} attacked {self.dino_three_turn.type}!")
             print(f"{self.dino_three_turn.type} is now at {self.dino_three_turn.health} health points!\n\n")
             if self.dino_three_turn.health != 0:
-                return self.battle_two()
+                return self.battle_three()
             elif self.dino_three_turn.health == 0:
-                print(f"{self.dino_three_turn.type} has lost the second battle!\n")
+                print(f"{self.dino_three_turn.type} has lost the final battle!\n\n\n")
+                self.winner_of_battle()
 
+    def winner_of_battle(self):
+        print("The winner has officially been decided!\n")
+        if self.robot_three_turn.health == 0 & self.robot_two_turn.health == 0 & self.robot_one_turn.health == 0:
+            print("The dinosaurs have won the battle!")
+        elif self.dino_one_turn.health == 0 & self.dino_two_turn.health == 0 & self.dino_three_turn.health == 0:
+            print("The robots have won the battle!")
