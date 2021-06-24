@@ -7,9 +7,9 @@ class Herd:
         self.create_herd()
 
     def create_herd(self):
-        trex = Dinosaur("T-rex", 10, 100)
-        velociraptor = Dinosaur("Velociraptor", 8, 75)
-        triceratops = Dinosaur("Triceratops", 6, 75)
+        trex = Dinosaur("T-rex", 25, 100)
+        velociraptor = Dinosaur("Velociraptor", 15, 75)
+        triceratops = Dinosaur("Triceratops", 20, 75)
         self.herd_list.append(trex)
         self.herd_list.append(velociraptor)
         self.herd_list.append(triceratops)
