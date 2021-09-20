@@ -20,7 +20,7 @@
 
 :heavy_check_mark: Completed functionality for choosing a robot or a dinosaur
 
-:heavy_check_mark: Completed functioanlity for displaying which side(Robot Or Dinosaur) won the round
+:heavy_check_mark: Completed functionality for displaying which side(Robot Or Dinosaur) won the round
 
 :heavy_check_mark: Completed functionality for displaying the game is over and if the user would like to play again
 
