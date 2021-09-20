@@ -1,4 +1,4 @@
-# Superheroes Django
+# Dinosaur And Robots
 
 ## Table of Contents
 - [Project Status](#project-status)
